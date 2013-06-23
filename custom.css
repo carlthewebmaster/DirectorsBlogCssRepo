@@ -12,6 +12,8 @@ your theme's stylesheet content.
 
 If you need any further help, ask in the CSS Customization forum.
 */
+
+
 body.custom-background {
   border-top: 30px solid #20558a;
 }
