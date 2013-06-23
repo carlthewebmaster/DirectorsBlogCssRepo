@@ -12,10 +12,8 @@ your theme's stylesheet content.
 
 If you need any further help, ask in the CSS Customization forum.
 */
-
-
 body.custom-background {
-  border-top: 30px solid #20558a;
+	border-top: 30px solid #20558a;
 }
 
 @media (max-width: 1340px) {
@@ -346,4 +344,38 @@ h1.site-title a:hover {
 
 .wf-active select, .wf-active input {
 	font-size: 14px;
+}
+
+.menu-footer-container { 
+    width:75%;
+    margin:auto;
+}
+
+.menu-footer-container li { 
+    position: relative;
+    display: inline-block;
+    float: none;
+    border-right: 1px solid #ccc;
+    padding: 0 .25em;
+}
+
+/* remove the pipe from the last list item */
+.menu-footer-container li:last-child  { 
+    border: 0; 
+    }  
+    
+.menu-footer-container ul {
+    text-align:center; 
+}
+
+/* add bottom text */
+.menu-footer-container:after { 
+    content: "National Institutes of Health (NIH), 9000 Rockville Pike, Bethesda, Maryland 20892"; 
+    padding-top: 10px;
+    position: relative;
+    display: inline-block;
+    float: none;
+    text-align:center;
+    width:100%;
+    
 }
