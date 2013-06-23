@@ -93,13 +93,18 @@ footer.entry-meta {
 	background-color: #ebebeb;
 	padding: 10px;
 }
-
+/*
 #site-introduction {
 	background: url('http://www.nih.gov/images/banner-nihlogo.png') 0 27px no-repeat;
 	padding: 0;
 	padding-top: 113px;
 }
+*/
+#site-introduction {
+    padding-top: 0;
+    padding-right: 20px;
 
+}
 #site-introduction:before {
 	content: 'U.S. Department of Health & Human Services';
 	font-family: Arial, Helvetica, sans-serif;
@@ -145,7 +150,7 @@ h1.site-title a:hover {
 	}
 	
 	h1.site-title,
-										h1.site-title a {
+											h1.site-title a {
 		float: right;
 		font-size: 36px;
 		line-height: 36px;
@@ -346,36 +351,43 @@ h1.site-title a:hover {
 	font-size: 14px;
 }
 
-.menu-footer-container { 
-    width:75%;
-    margin:auto;
+.menu-footer-container {
+	width: 75%;
+	margin: auto;
 }
 
-.menu-footer-container li { 
-    position: relative;
-    display: inline-block;
-    float: none;
-    border-right: 1px solid #ccc;
-    padding: 0 .25em;
+.menu-footer-container li {
+	position: relative;
+	display: inline-block;
+	float: none;
+	border-right: 1px solid #ccc;
+	padding: 0 .25em;
 }
 
 /* remove the pipe from the last list item */
-.menu-footer-container li:last-child  { 
-    border: 0; 
-    }  
-    
+.menu-footer-container li:last-child {
+	border: 0;
+}
+
 .menu-footer-container ul {
-    text-align:center; 
+	text-align: center;
 }
 
 /* add bottom text */
-.menu-footer-container:after { 
-    content: "National Institutes of Health (NIH), 9000 Rockville Pike, Bethesda, Maryland 20892"; 
-    padding-top: 10px;
-    position: relative;
-    display: inline-block;
-    float: none;
-    text-align:center;
-    width:100%;
-    
+.menu-footer-container:after {
+	content: "National Institutes of Health (NIH), 9000 Rockville Pike, Bethesda, Maryland 20892";
+	padding-top: 10px;
+	position: relative;
+	display: inline-block;
+	float: none;
+	text-align: center;
+	width: 100%;
+}
+
+#headimg img {
+    width: auto;
+    float: left;
+    box-shadow: 0 0 0 0;
+    border-radius: 0 0 0 0;   
+    margin-top: -110px;
 }
