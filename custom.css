@@ -19,7 +19,8 @@ body.custom-background {
 @media (max-width: 1340px) {
 	body.custom-background {
 		background-image: none;
-	}
+        background-color: #fff;
+    }
 }
 
 #page {
