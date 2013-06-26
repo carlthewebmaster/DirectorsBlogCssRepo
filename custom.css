@@ -105,6 +105,7 @@ footer.entry-meta {
 #site-introduction {
 	padding-top: 0;
 	padding-right: 20px;
+    text-align: right;
 }
 
 #site-introduction:before {
@@ -117,6 +118,7 @@ footer.entry-meta {
 	padding: 5px 0 5px 27px;
 	margin-top: -143px;
 	text-wrap: nowrap;
+    text-align: left;
 }
 
 h1.site-title,
@@ -151,8 +153,7 @@ h1.site-title a:hover {
 		margin-top: -30px;
 	}
 	
-	h1.site-title,
-												h1.site-title a {
+	h1.site-title, h1.site-title a {
 		float: right;
 		font-size: 36px;
 		line-height: 36px;
@@ -392,4 +393,9 @@ h1.site-title a:hover {
 	box-shadow: 0 0 0 0;
 	border-radius: 0 0 0 0;
 	margin-top: -110px;
+}
+
+/* ie8 fixes */
+#tertiary {
+float: right;
 }
