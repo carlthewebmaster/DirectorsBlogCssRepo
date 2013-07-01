@@ -19,8 +19,8 @@ body.custom-background {
 @media (max-width: 1340px) {
 	body.custom-background {
 		background-image: none;
-        background-color: #fff;
-    }
+		background-color: #fff;
+	}
 }
 
 #page {
@@ -105,7 +105,13 @@ footer.entry-meta {
 #site-introduction {
 	padding-top: 0;
 	padding-right: 20px;
-    text-align: right;
+	text-align: right;
+	margin-top: -40px\9;
+/* IE8 fix, Customizer needs double \ */
+}
+
+#site-introduction:nth-of-type(1n) {
+	margin-top: 0;
 }
 
 #site-introduction:before {
@@ -117,8 +123,10 @@ footer.entry-meta {
 	background: transparent url('http://nihdirectorsblog.files.wordpress.com/2013/06/nihribbon-hhs.png') no-repeat 0 2px;
 	padding: 5px 0 5px 27px;
 	margin-top: -143px;
+	margin-top: 9px;
+	margin-bottom: 0;
 	text-wrap: nowrap;
-    text-align: left;
+	text-align: left;
 }
 
 h1.site-title,
@@ -135,6 +143,11 @@ h1.site-title a {
 h1.site-title a:visited,
 h1.site-title a:hover {
 	color: #323232;
+}
+
+h1.site-title a {
+	margin-top: -55px\9;
+/* IE8 fix, Customizer needs double \ */
 }
 
 @media (min-width: 760px) {
@@ -392,10 +405,22 @@ h1.site-title a:hover {
 	float: left;
 	box-shadow: 0 0 0 0;
 	border-radius: 0 0 0 0;
-	margin-top: -110px;
+	margin-top: -100px;
+}
+
+@media (max-width: 660px) {
+	#headimg img {
+		width: auto;
+		float: left;
+		margin-top: -170px;
+	}
+	
+	.site-title {
+		text-align: center;
+	}
 }
 
 /* ie8 fixes */
 #tertiary {
-float: right;
+	float: right;
 }
