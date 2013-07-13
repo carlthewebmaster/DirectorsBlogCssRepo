@@ -213,7 +213,7 @@ h1.site-title a {
 		font-size: 30px;
 		margin-top: 0;
 		display: block;
-		width: 100%;
+		width: auto;
 		box-sizing: border-box;
 		border: 1px solid #5c9bd0;
 		border-bottom: none;
