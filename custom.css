@@ -1,17 +1,6 @@
-/*
-Welcome to Custom CSS!
-
-CSS (Cascading Style Sheets) is a kind of code that tells the browser how
-to render a web page. You may delete these comments and get started with
-your customizations.
-
-By default, your stylesheet will be loaded after the theme stylesheets,
-which means that your rules can take precedence and override the theme CSS
-rules. Just write here what you want to change, you don't need to copy all
-your theme's stylesheet content.
-
-If you need any further help, ask in the CSS Customization forum.
-*/
+/**
+ * Development by Crowd Favorite - http://crowdfavorite.com/
+ */
 body.custom-background {
 	border-top: 30px solid #20558a;
 }
@@ -72,8 +61,7 @@ a:visited,
 #main h3 a,
 #main h3 span {
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 100px;
-	line-height: 23px;
+	line-height: 100%;
 }
 
 #main h4, #main h4 a, #main h4 span,
@@ -103,11 +91,10 @@ footer.entry-meta {
 }
 */
 #site-introduction {
-	padding-top: 0;
-	padding-right: 20px;
+	padding: 0;
 	text-align: right;
 	margin-top: -40px\9;
-/* IE8 fix, Customizer needs double \ */
+/* IE8 fix, Customizer needs double  */
 }
 
 #site-introduction:nth-of-type(1n) {
@@ -122,8 +109,8 @@ footer.entry-meta {
 	color: #fff;
 	background: transparent url('http://nihdirectorsblog.files.wordpress.com/2013/06/nihribbon-hhs.png') no-repeat 0 2px;
 	padding: 5px 0 5px 27px;
-	margin-top: -143px;
-	margin-top: 9px;
+	margin-top: -143px\9;
+	margin-top: -30px;
 	margin-bottom: 0;
 	text-wrap: nowrap;
 	text-align: left;
@@ -131,23 +118,64 @@ footer.entry-meta {
 
 h1.site-title,
 h1.site-title a {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+	letter-spacing: .1em;
 	font-size: 24px;
 	font-weight: normal;
+	text-transform: uppercase;
 	line-height: 24px;
 	padding: 0;
 	margin: 0;
+	color: #fff;
+	text-align: left;
+}
+
+h1.site-title {
+	background-color: #387db4;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(rgb(56,125,180)),to(rgb(71,112,164)));
+	background-image: -webkit-linear-gradient(top,rgb(56,125,180),rgb(71,112,164));
+	background-image: -moz-linear-gradient(top,rgb(56,125,180),rgb(71,112,164));
+	background-image: -o-linear-gradient(top,rgb(56,125,180),rgb(71,112,164));
+	background-image: -ms-linear-gradient(top,rgb(56,125,180),rgb(71,112,164));
+	background-image: linear-gradient(top,rgb(56,125,180),rgb(71,112,164));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#387db4',EndColorStr='#4770a4');
+	font-size: 36px;
+	position: relative;
+	box-sizing: border-box;
+	top: 111px;
+	top: 121px\9;
 	margin-top: 55px;
+	margin-top: 20px\9;
+	padding: 10px 10px 0;
 }
 
 h1.site-title a:visited,
 h1.site-title a:hover {
-	color: #323232;
+	color: #fff;
 }
 
 h1.site-title a {
-	margin-top: -55px\9;
-/* IE8 fix, Customizer needs double \ */
+	margin-top: 0;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #5c9bd0;
+	border-bottom: none;
+	padding: 5px 8px;
+/* IE8 fix, Customizer needs double  */
+}
+
+#main {
+	padding-top: 40px;
+}
+
+#headimg img {
+	width: auto;
+	float: left;
+	box-shadow: 0 0 0 0;
+	border-radius: 0 0 0 0;
+	margin-top: -120px;
+	margin-top: -90px\9;
 }
 
 @media (min-width: 760px) {
@@ -162,16 +190,50 @@ h1.site-title a {
 		background-position: 0 57px;
 	}
 	
-	#site-introduction:before {
-		margin-top: -30px;
+	#main {
+		padding-top: 50px;
 	}
 	
-	h1.site-title, h1.site-title a {
-		float: right;
-		font-size: 36px;
+	#headimg img {
+		margin-top: -105px;
+	}
+	
+	#site-introduction {
+		padding-top: 0;
+	}
+	
+	h1.site-title {
+		top: 98px;
+		padding: 10px 10px 0;
+		margin-top: 55px;
+	}
+	
+	h1.site-title a {
 		line-height: 36px;
-		margin: 20px 0 0;
-		text-align: right;
+		font-size: 30px;
+		margin-top: 0;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid #5c9bd0;
+		border-bottom: none;
+		padding: 5px 8px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1.site-title {
+		top: 58px;
+		top: 98px\9;
+	}
+	
+	.menu-toggle {
+		margin-top: 40px;
+		margin-top: 80px\9;
+	}
+	
+	#main {
+		padding-top: 0;
 	}
 }
 
@@ -400,24 +462,28 @@ h1.site-title a {
 	width: 100%;
 }
 
-#headimg img {
-	width: auto;
-	float: left;
-	box-shadow: 0 0 0 0;
-	border-radius: 0 0 0 0;
-	margin-top: -100px;
+#secondary,
+#tertiary {
+	padding: 0;
+}
+
+.hentry {
+	padding: 12px 15px 0;
 }
 
 @media (max-width: 660px) {
 	#headimg img {
 		width: auto;
 		float: left;
-		margin-top: -170px;
 	}
 	
 	.site-title {
 		text-align: center;
 	}
+}
+
+.wp-caption-text {
+	text-align: left;
 }
 
 /* ie8 fixes */
