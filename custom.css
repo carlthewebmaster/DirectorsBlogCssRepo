@@ -93,7 +93,7 @@ footer.entry-meta {
 #site-introduction {
 	padding: 0;
 	text-align: right;
-	margin-top: -40px\9;
+	margin-top: -40px9;
 /* IE8 fix, Customizer needs double  */
 }
 
@@ -109,7 +109,7 @@ footer.entry-meta {
 	color: #fff;
 	background: transparent url('http://nihdirectorsblog.files.wordpress.com/2013/06/nihribbon-hhs.png') no-repeat 0 2px;
 	padding: 5px 0 5px 27px;
-	margin-top: -143px\9;
+	margin-top: -143px9;
 	margin-top: -30px;
 	margin-bottom: 0;
 	text-wrap: nowrap;
@@ -143,9 +143,9 @@ h1.site-title {
 	position: relative;
 	box-sizing: border-box;
 	top: 111px;
-	top: 121px\9;
+	top: 121px9;
 	margin-top: 55px;
-	margin-top: 20px\9;
+	margin-top: 20px9;
 	padding: 10px 10px 0;
 }
 
@@ -175,7 +175,7 @@ h1.site-title a {
 	box-shadow: 0 0 0 0;
 	border-radius: 0 0 0 0;
 	margin-top: -120px;
-	margin-top: -90px\9;
+	margin-top: -90px9;
 }
 
 @media (min-width: 760px) {
@@ -224,12 +224,12 @@ h1.site-title a {
 @media screen and (max-width: 600px) {
 	h1.site-title {
 		top: 58px;
-		top: 98px\9;
+		top: 98px9;
 	}
 	
 	.menu-toggle {
 		margin-top: 40px;
-		margin-top: 80px\9;
+		margin-top: 80px9;
 	}
 	
 	#main {
