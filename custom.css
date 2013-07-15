@@ -95,7 +95,7 @@ footer.entry-meta {
 	text-align: right;
 	margin-top: -40px\9;
 /* IE8 fix, Customizer needs double  */
-} 
+}
 
 #site-introduction:nth-of-type(1n) {
 	margin-top: 0;
@@ -157,7 +157,6 @@ h1.site-title a:hover {
 h1.site-title a {
 	margin-top: 0;
 	display: block;
-    display; inline-block\9;
 	width: 100%;
 	box-sizing: border-box;
 	border: 1px solid #5c9bd0;
@@ -214,7 +213,6 @@ h1.site-title a {
 		font-size: 30px;
 		margin-top: 0;
 		display: block;
-        display: inline-block\9;
 		width: auto;
 		box-sizing: border-box;
 		border: 1px solid #5c9bd0;
